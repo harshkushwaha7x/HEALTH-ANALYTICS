@@ -175,8 +175,37 @@ venv\Scripts\activate  # Windows
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-# Start the server
+**API Configuration**
+
+This project integrates with **Google Gemini** and **Groq** APIs for AI features:
+
+| API | Purpose | Get Key |
+|-----|---------|---------|
+| **Gemini** | Lab report text extraction, Health recommendations | [Google AI Studio](https://aistudio.google.com/apikey) |
+| **Groq** | Medical image analysis (X-Ray/CT/MRI) | [Groq Console](https://console.groq.com/keys) |
+
+**Set environment variables in terminal before running backend:**
+
+**Windows (CMD):**
+```bash
+set GEMINI_API_KEY=your_gemini_api_key_here
+set GROQ_API_KEY=your_groq_api_key_here
+python app.py
+```
+
+**Windows (PowerShell):**
+```powershell
+$env:GEMINI_API_KEY="your_gemini_api_key_here"
+$env:GROQ_API_KEY="your_groq_api_key_here"
+python app.py
+```
+
+**Linux/Mac:**
+```bash
+export GEMINI_API_KEY=your_gemini_api_key_here
+export GROQ_API_KEY=your_groq_api_key_here
 python app.py
 ```
 
@@ -225,9 +254,7 @@ Frontend runs at `http://localhost:3000`
 
 ### Export
 
-* `GET /api/patients/:id/export?format=json` — Export as JSON
-* `GET /api/patients/:id/export?format=csv` — Export as CSV
-* `GET /api/patients/:id/export?format=text` — Export as TXT
+* `GET /api/patients/:id/export?format=text` — Export report as TXT
 
 ---
 
