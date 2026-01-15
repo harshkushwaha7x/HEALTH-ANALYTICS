@@ -36,7 +36,20 @@ Core highlights:
 
 ---
 
-## 🚀 Key Features
+## � Screenshots
+
+### Dashboard
+<img src="assets/HEALTH ANALYTICS 1.png" alt="Dashboard" width="100%">
+
+### Results
+<img src="assets/HEALTH ANALYTICS 2.png" alt="Results" width="100%">
+
+### AI Recommendations
+<img src="assets/HEALTH ANALYTICS 3.png" alt="AI Recommendations" width="100%">
+
+---
+
+## �🚀 Key Features
 
 ### 🧠 Machine Learning Models
 
