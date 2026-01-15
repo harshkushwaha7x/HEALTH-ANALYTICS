@@ -4,7 +4,7 @@
 
 **Health Analytics** is a full-stack AI-powered health dashboard built with modern web technologies. It enables **multi-modal data analysis**, **machine learning predictions**, and **real-time health insights** — designed for individuals who want to understand and track their health data intelligently.
 
-[Portfolio](https://portflio-3.vercel.app/) • [GitHub](https://github.com/harshkushwaha7x)
+[Portfolio](https://portfolio-harsh7x.vercel.app/) • [GitHub](https://github.com/harshkushwaha7x)
 
 </div>
 
@@ -146,7 +146,7 @@ Health-Analytics/
 ### Installation
 
 ```bash
-git clone https://github.com/harshkushwaha7x/health-analytics.git
+git clone https://github.com/harshkushwaha7x/HEALTH-ANALYTICS.git
 cd health-analytics
 ```
 
@@ -276,7 +276,7 @@ This application is for **educational and demonstration purposes only**. It is N
 
 **Harsh Kushwaha** — Developer & Maintainer
 
-* Portfolio: [https://portflio-3.vercel.app/](https://portflio-3.vercel.app/)
+* Portfolio: [https://portfolio-harsh7x.vercel.app/](https://portfolio-harsh7x.vercel.app/)
 * GitHub: [https://github.com/harshkushwaha7x](https://github.com/harshkushwaha7x)
 * LinkedIn: [https://www.linkedin.com/in/harsh-kushwaha-7x/](https://www.linkedin.com/in/harsh-kushwaha-7x/)
 * Email: [harshkushwaha4151@gmail.com](mailto:harshkushwaha4151@gmail.com)

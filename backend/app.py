@@ -46,6 +46,27 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
+# ============= Root Route =============
+
+@app.route('/', methods=['GET'])
+def root():
+    """Root endpoint - API welcome message."""
+    return jsonify({
+        'name': 'Health Analytics API',
+        'version': '1.0.0',
+        'status': 'running',
+        'endpoints': {
+            'health': '/api/health',
+            'patients': '/api/patients',
+            'dashboard': '/api/patients/<id>/dashboard',
+            'predict': '/api/patients/<id>/predict',
+            'upload': '/api/patients/<id>/upload'
+        },
+        'frontend': 'http://localhost:3000',
+        'message': 'Welcome to Health Analytics API. Access the dashboard at http://localhost:3000'
+    })
+
+
 # ============= Health Check =============
 
 @app.route('/api/health', methods=['GET'])
