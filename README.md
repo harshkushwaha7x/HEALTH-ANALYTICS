@@ -49,6 +49,12 @@ Core highlights:
 
 ---
 
+## 🏗️ Solution Architecture
+
+<img src="assets/solution_architecture.png" alt="Solution Architecture" width="100%">
+
+---
+
 ## �🚀 Key Features
 
 ### 🧠 Machine Learning Models
@@ -297,12 +303,6 @@ Frontend runs at `http://localhost:3000`
 2. Create a feature branch (`git checkout -b feature-name`)
 3. Commit your changes (`git commit -m "Add new feature"`)
 4. Push & open a Pull Request
-
----
-
-## 🪪 License
-
-This project is licensed under the **MIT License**.
 
 ---
 
