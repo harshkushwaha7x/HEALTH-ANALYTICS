@@ -391,6 +391,37 @@ def get_predictions(patient_id):
     })
 
 
+@app.route('/api/patients/<int:patient_id>/anomalies', methods=['GET'])
+def detect_anomalies(patient_id):
+    """Detect anomalies and analyze trends in patient lab values."""
+    patient = Patient.query.get_or_404(patient_id)
+    
+    try:
+        # Get all labs for this patient
+        labs = LabResult.query.filter_by(patient_id=patient_id).order_by(LabResult.recorded_at).all()
+        
+        if not labs:
+            return jsonify({
+                'anomalies': [],
+                'trends': {},
+                'alerts': [],
+                'message': 'No lab data available for analysis'
+            })
+        
+        # Convert to dict format for anomaly detector
+        lab_data = [l.to_dict() for l in labs]
+        patient_info = {'gender': patient.gender, 'age': calculate_age(patient.date_of_birth) if patient.date_of_birth else None}
+        
+        # Run anomaly detection
+        anomaly_detector = models['anomaly_detector']
+        result = anomaly_detector.detect_anomalies(lab_data, patient_info)
+        
+        return jsonify(result)
+    
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
 # ============= Dashboard =============
 
 @app.route('/api/patients/<int:patient_id>/dashboard', methods=['GET'])
