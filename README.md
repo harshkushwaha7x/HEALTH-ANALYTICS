@@ -1,6 +1,6 @@
 <div align="center">
 
-# HEALTH ANALYTICS 🏥
+# HEALTH ANALYTICS
 
 **Health Analytics** is a full-stack AI-powered health dashboard built with modern web technologies. It enables **multi-modal data analysis**, **machine learning predictions**, and **real-time health insights** — designed for individuals who want to understand and track their health data intelligently.
 
@@ -20,7 +20,7 @@
 
 ---
 
-## 🏥 Overview
+## Overview
 
 **Health Analytics** is a comprehensive health data platform that processes lab reports, medical images, genomics data, and clinical notes to generate AI-driven insights and risk predictions.
 
@@ -28,15 +28,15 @@ Built using **Flask**, **React**, **SQLite**, and **Machine Learning models**, i
 
 Core highlights:
 
-* 🧠 **AI-Powered Predictions**: Multi-modal ML models for health risk assessment
-* 📊 **Interactive Dashboard**: Real-time visualizations and trend charts
-* 📁 **Multi-Format Upload**: PDF, CSV, Excel, VCF, and medical images
-* 🔬 **Comprehensive Analysis**: Labs, imaging, genomics, and clinical notes
-* 📈 **Trend Tracking**: Historical data visualization with sparklines
+* **AI-Powered Predictions**: Multi-modal ML models for health risk assessment
+* **Interactive Dashboard**: Real-time visualizations and trend charts
+* **Multi-Format Upload**: PDF, CSV, Excel, VCF, and medical images
+* **Comprehensive Analysis**: Labs, imaging, genomics, and clinical notes
+* **Trend Tracking**: Historical data visualization with sparklines
 
 ---
 
-## � Screenshots
+## Screenshots
 
 ### Dashboard
 <img src="assets/HEALTH ANALYTICS 1.png" alt="Dashboard" width="100%">
@@ -49,24 +49,25 @@ Core highlights:
 
 ---
 
-## 🏗️ Solution Architecture
+## Solution Architecture
 
 <img src="assets/solution_architecture.png" alt="Solution Architecture" width="100%">
 
 ---
 
-## �🚀 Key Features
+## Key Features
 
-### 🧠 Machine Learning Models
+### Machine Learning Models
 
 * **Diabetes Risk Model**: A1C-based classification with clinical thresholds
 * **Cardiovascular Risk**: Framingham-inspired lipid panel analysis
-* **Imaging Classifier**: Abnormality detection for X-rays, CT, MRI
+* **Imaging Classifier**: Abnormality detection for X-rays, CT, MRI with cancer staging
 * **Clinical NLP**: Entity extraction from doctor's notes
-* **Genomics Analysis**: Variant pathogenicity scoring
+* **Genomics Analysis**: ACMG variant classification and hereditary syndrome detection
+* **Anomaly Detection**: Trend analysis, rate of change, clinical reference ranges
 * **Multi-Modal Fusion**: Combined health risk assessment
 
-### 📊 Dashboard & Visualization
+### Dashboard & Visualization
 
 * Overall health risk score with confidence intervals
 * Interactive trend charts for biomarkers
@@ -74,7 +75,7 @@ Core highlights:
 * Predictions panel with contributing factors
 * Personalized health recommendations
 
-### 📁 Data Ingestion
+### Data Ingestion
 
 * PDF lab reports with OCR extraction
 * CSV/Excel spreadsheet processing
@@ -84,7 +85,7 @@ Core highlights:
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -114,14 +115,14 @@ Core highlights:
 
 ---
 
-## 🧩 Architecture
+## Architecture
 
 ```text
 Health-Analytics/
 ├── backend/
-│   ├── app.py              # Flask API server (31 endpoints)
+│   ├── app.py              # Flask API server (34 endpoints)
 │   ├── models.py           # SQLAlchemy database models
-│   ├── ml_models.py        # 6 ML model classes
+│   ├── ml_models.py        # 7 ML model classes
 │   ├── parsers.py          # Multi-format file parsing
 │   ├── llm_service.py      # AI/LLM integration
 │   ├── data_generator.py   # Synthetic data generation
@@ -154,7 +155,7 @@ Health-Analytics/
 
 ---
 
-## 🧰 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -233,7 +234,7 @@ Frontend runs at `http://localhost:3000`
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Patients
 
@@ -264,7 +265,7 @@ Frontend runs at `http://localhost:3000`
 
 ---
 
-## 🧠 ML Models
+## ML Models
 
 | Model | Input | Output |
 |-------|-------|--------|
@@ -277,7 +278,7 @@ Frontend runs at `http://localhost:3000`
 
 ---
 
-## ⚡ Performance
+## Performance
 
 * Lightweight SQLite database
 * Efficient Canvas-based charts
@@ -287,7 +288,7 @@ Frontend runs at `http://localhost:3000`
 
 ---
 
-## 🎨 Design
+## Design
 
 * **Theme**: Professional Teal/Slate dark mode
 * **Typography**: Inter font family
@@ -297,7 +298,7 @@ Frontend runs at `http://localhost:3000`
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork this repository
 2. Create a feature branch (`git checkout -b feature-name`)
@@ -306,13 +307,13 @@ Frontend runs at `http://localhost:3000`
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This application is for **educational and demonstration purposes only**. It is NOT intended for clinical use or medical decision-making. Always consult qualified healthcare professionals for medical advice.
 
 ---
 
-## 📬 Contact
+## Contact
 
 **Harsh Kushwaha** — Developer & Maintainer
 
@@ -325,7 +326,7 @@ This application is for **educational and demonstration purposes only**. It is N
 
 <div align="center">
 
-**HEALTH ANALYTICS** – AI-Powered Health Insights. Track Smarter. 🏥
+**HEALTH ANALYTICS** – AI-Powered Health Insights. Track Smarter.
 Built by <b>Harsh Kushwaha</b>
 
 </div>
